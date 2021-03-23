@@ -1,0 +1,8 @@
+java: java
+javac: javac
+javac.source: 11
+javac.target: 11
+javac.debug:  on
+
+#if you want bnd to tell you more during the build
+#-verbose: true

@@ -1,0 +1,34 @@
+-plugin.slf4j: \
+	aQute.bnd.repository.maven.pom.provider.BndPomRepository;\
+		releaseUrl			= "https://repo.maven.apache.org/maven2/"; \
+		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/";\
+		name				= "Slf4j and Logback Dependencies";\
+		revision			= "${dependencies.logging}" ;\
+		transitive			= false
+
+-runpath.slf4j: ${if;${-enable-slf4j-logback};${slf4j.runpath}}
+-runsystempackages.slf4j: ${if;${-enable-slf4j-logback};${slf4j.systempackages}}
+
+-enable-slf4j-logback: false
+
+slf4j.systempackages: \
+	org.slf4j;version=1.7.25,\
+	org.slf4j.helpers;version=1.7.25,\
+	org.slf4j.spi;version=1.7.25
+
+slf4j.runpath:  \
+	ch.qos.logback.classic;version='[1.2.3,1.2.4)',\
+	ch.qos.logback.core;version='[1.2.3,1.2.4)',\
+	jul.to.slf4j;version='[1.7.25,1.7.26)',\
+	slf4j.api;version='[1.7.25,1.7.26)'
+
+dependencies.logging: \
+	ch.qos.logback:logback-classic:1.2.3,\
+	ch.qos.logback:logback-core:1.2.3,\
+	org.slf4j:jul-to-slf4j:1.7.25,\
+	org.slf4j:log4j-over-slf4j:1.7.25,\
+	org.slf4j:osgi-over-slf4j:1.7.25,\
+	org.slf4j:slf4j-api:1.7.25,\
+	org.slf4j:slf4j-simple:1.7.25,\
+	org.slf4j:slf4j-ext:1.7.25,\
+	org.slf4j:slf4j-jcl:1.7.25

@@ -1,0 +1,29 @@
+#Set Git revision information in the manifests of built bundles
+#Git-Descriptor:           ${system-allow-fail;git describe --dirty --always}
+#Git-SHA:                  ${system-allow-fail;git rev-list -1 HEAD}
+
+#Bundle-DocURL: https://yourdoc.de
+Bundle-License: Eclipse Public License 1.0
+Bundle-Copyright:Data In Motion Consuling GmbH - All rights reserved
+Bundle-Vendor: Data In Motion Consuling GmbH
+Bundle-ContactAddress: info@data-in-motion.biz
+Bundle-DocURL: https://gitlab.com/gecko.io/geckoEMF
+Bundle-SCM: url=https://gitlab.com/gecko.io/geckoEMF, \
+	connection=scm:git:https://gitlab.com/gecko.io/geckoEMF.git, \
+	developerConnection=scm:git:git@gitlab.com:gecko.io/geckoEMF.git
+Bundle-Developers: \
+    jalbert; \
+        email="j.albert@data-in-motion.biz"; \
+        name="Juergen Albert"; \
+        organization="Data In Motion"; \
+        organizationUrl="https://www.datainmotion.de"; \
+        roles="architect,developer", \
+    mhoffmann; \
+        name="Mark Hoffmann"; \
+        email="m.hoffmann@data-in-motion.biz"; \
+        url="https://www.datainmotion.de"; \
+        organization="Data In Motion"; \
+        organizationUrl="https://www.datainmotion.de"; \
+        roles="developer,architect"
+
+-removeheaders: Bnd-LastModified, Tool, Created-By, Private-Package
