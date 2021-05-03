@@ -1,0 +1,52 @@
+-plugin.geckoEMF: \
+	${emf.plugin}
+
+emf.plugin: \
+	aQute.bnd.repository.maven.pom.provider.BndPomRepository;\
+		releaseUrl			= "https://repo.maven.apache.org/maven2/,https://devel.data-in-motion.biz/nexus/repository/dim-release/"; \
+		snapshotUrl			= "https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/";\
+		revision            =  "${emfBomDeps}";\
+		transitive          = false;\
+		name=GeckoEMF Workspace Extension
+
+-buildpath.emf = ${if;${-enable-gecko-emf};${emf.lib}}
+
+#We have to set a default to prevent a warning the the instruction is unknowon
+-enable-gecko-emf: false
+
+geckEMFVersion: 4.0.0
+
+emfBomDeps:\
+	org.geckoprojects.emf:org.gecko.emf.osgi.api:${geckEMFVersion},\
+	org.geckoprojects.emf:org.gecko.emf.osgi.component:${geckEMFVersion},\
+	org.geckoprojects.emf:org.gecko.emf.osgi.ecore:${geckEMFVersion},\
+	org.geckoprojects.emf:org.gecko.emf.osgi.model.info.api:${geckEMFVersion},\
+	org.geckoprojects.emf:org.gecko.emf.osgi.model.info.impl:${geckEMFVersion},\
+	org.geckoprojects.emf:org.gecko.emf.osgi.bnd.templates.project:${geckEMFVersion},\
+	org.geckoprojects.emf:org.gecko.emf.osgi.annotation:${geckEMFVersion},\
+	org.geckoprojects.emf:org.gecko.emf.osgi.codegen:${geckEMFVersion},\
+	${emfBomDeps.transient}
+
+emfBomDeps.transient:\
+	org.osgi:osgi.core:6.0.0,\
+	org.osgi:osgi.cmpn:6.0.0,\
+	org.osgi:osgi.annotation:7.0.0,\
+	org.osgi:org.osgi.util.function:1.1.0,\
+	org.osgi:org.osgi.util.function:1.1.0,\
+	org.osgi:org.osgi.util.function:1.1.0,\
+	org.osgi:org.osgi.util.promise:1.1.0,\
+	org.apache.felix:org.apache.felix.configadmin:1.9.16,\
+	org.apache.felix:org.apache.felix.scr:2.1.24,\
+	org.eclipse.emf:org.eclipse.emf.common:2.20.0,\
+	org.eclipse.emf:org.eclipse.emf.ecore:2.23.0,\
+	org.eclipse.emf:org.eclipse.emf.ecore.xmi:2.16.0
+
+emf.lib: \
+	org.gecko.emf.osgi.annotation;version=latest,\
+	org.gecko.emf.osgi.api;version=latest,\
+	org.eclipse.emf.common,\
+	org.eclipse.emf.ecore,\
+	org.eclipse.emf.ecore.xmi,\
+	osgi.annotation;version=7.0.0,\
+	osgi.core;version=6.0,\
+	osgi.cmpn;version=7.0		
