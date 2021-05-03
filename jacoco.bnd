@@ -36,3 +36,5 @@ dependencies.jacoco:\
 
 -runvm.coverage: -javaagent:${repo;org.jacoco:org.jacoco.agent:jar:runtime;latest}=destfile=${target-dir}/jacoco.exec
 
+## BndPomRepository could load g_a_v_c sind 6.0.0
+-require-bnd: "(version>=6.0.0)"
