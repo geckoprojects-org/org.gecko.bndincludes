@@ -32,8 +32,8 @@
 -releaserepo: Release, DIM_Release
 
 -include: ${if;${def;release.dir};\
-				https://raw.githubusercontent.com/geckoprojects-org/org.gecko.bndincludes/main/gecko_defaults_release_release.bnd;\
-				https://raw.githubusercontent.com/geckoprojects-org/org.gecko.bndincludes/main/gecko_defaults_release_snapshot.bnd\
+				https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_release_release.bnd;\
+				https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_release_snapshot.bnd\
 			},\
 			${if;${env;GNUPG_PASSPHRASE};\
 				https://raw.githubusercontent.com/geckoprojects-org/org.gecko.bndincludes/main/gecko_defaults_release_central.bnd\
