@@ -3,14 +3,11 @@
 #Git-SHA:                  ${system-allow-fail;git rev-list -1 HEAD}
 
 #Bundle-DocURL: https://yourdoc.de
-Bundle-License: Eclipse Public License 1.0
+Bundle-License: Apache License 2.0
 Bundle-Copyright:Data In Motion Consuling GmbH - All rights reserved
 Bundle-Vendor: Data In Motion Consuling GmbH
 Bundle-ContactAddress: info@data-in-motion.biz
-Bundle-DocURL: https://gitlab.com/gecko.io/geckoEMF
-Bundle-SCM: url=https://gitlab.com/gecko.io/geckoEMF, \
-	connection=scm:git:https://gitlab.com/gecko.io/geckoEMF.git, \
-	developerConnection=scm:git:git@gitlab.com:gecko.io/geckoEMF.git
+
 Bundle-Developers: \
     jalbert; \
         email="j.albert@data-in-motion.biz"; \
