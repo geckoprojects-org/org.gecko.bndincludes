@@ -15,13 +15,11 @@ dependencies.osgi.r6.all: \
 
 ### OSGi Annotations
 dependencies.osgi.r6.annotation: \
-	org.osgi:osgi.annotation:6.0.0,\
 	org.osgi:org.osgi.annotation.bundle:1.0.0,\
 	org.osgi:org.osgi.annotation.versioning:1.0.0
 	
 ### OSGi Core
 dependencies.osgi.r6.core: \
-	org.osgi:osgi.core:6.0.0,\
 	org.osgi:org.osgi.framework:1.8.0,\
 	org.osgi:org.osgi.dto:1.0.0,\
 	org.osgi:org.osgi.namespace.contract:1.0.0,\
@@ -92,7 +90,6 @@ dependencies.osgi.r6.cmpn: \
 
 ### OSGi Enterprise
 dependencies.osgi.r6.enterprise: \
-	org.osgi:osgi.enterprise:6.0.0,\
 	org.osgi:org.osgi.jmx:1.1.0,\
 	org.osgi:org.osgi.service.async:1.0.0,\
 	org.osgi:org.osgi.service.cdi:1.0.0,\
