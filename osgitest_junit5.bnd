@@ -65,14 +65,14 @@ dependencies.osgi.test: \
 
 # This is the version of JUnit that will be used at build time and runtime
 dependencies.junit5: \
-	org.junit.jupiter:junit-jupiter-api:5.7.2,\
-	org.junit.jupiter:junit-jupiter-engine:5.7.2,\
-	org.junit.jupiter:junit-jupiter-params:5.7.2,\
-	org.junit.platform:junit-platform-runner:1.7.2,\
-	org.junit.platform:junit-platform-commons:1.7.2,\
-	org.junit.platform:junit-platform-launcher:1.7.2,\
-	org.junit.platform:junit-platform-engine:1.7.2,\
-	org.junit.platform:junit-platform-testkit:1.7.2
+	org.junit.jupiter:junit-jupiter-api:5.7.0,\
+	org.junit.jupiter:junit-jupiter-engine:5.7.0,\
+	org.junit.jupiter:junit-jupiter-params:5.7.0,\
+	org.junit.platform:junit-platform-runner:1.7.0,\
+	org.junit.platform:junit-platform-commons:1.7.0,\
+	org.junit.platform:junit-platform-launcher:1.7.0,\
+	org.junit.platform:junit-platform-engine:1.7.0,\
+	org.junit.platform:junit-platform-testkit:1.7.0
 
 # This is the version of Mockito that will be used at build time and run time
 dependencies.mockito: \
