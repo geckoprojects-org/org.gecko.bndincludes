@@ -57,22 +57,22 @@ dependencies.junit5.all: \
 
 # This is the version of OSGI-Test that will be used at build time and runtime
 dependencies.osgi.test: \
-	org.osgi:org.osgi.test.junit5:0.10.0,\
-	org.osgi:org.osgi.test.junit5.cm:0.10.0,\
-	org.osgi:org.osgi.test.common:0.10.0,\
-	org.osgi:org.osgi.test.assertj.framework:0.10.0,\
-	org.osgi:org.osgi.test.assertj.promise:0.10.0
+	org.osgi:org.osgi.test.junit5:1.1.0,\
+	org.osgi:org.osgi.test.junit5.cm:1.1.0,\
+	org.osgi:org.osgi.test.common:1.1.0,\
+	org.osgi:org.osgi.test.assertj.framework:1.1.0,\
+	org.osgi:org.osgi.test.assertj.promise:1.1.0
 
 # This is the version of JUnit that will be used at build time and runtime
 dependencies.junit5: \
-	org.junit.jupiter:junit-jupiter-api:5.7.0,\
-	org.junit.jupiter:junit-jupiter-engine:5.7.0,\
-	org.junit.jupiter:junit-jupiter-params:5.7.0,\
-	org.junit.platform:junit-platform-runner:1.7.0,\
-	org.junit.platform:junit-platform-commons:1.7.0,\
-	org.junit.platform:junit-platform-launcher:1.7.0,\
-	org.junit.platform:junit-platform-engine:1.7.0,\
-	org.junit.platform:junit-platform-testkit:1.7.0
+	org.junit.jupiter:junit-jupiter-api:5.7.2,\
+	org.junit.jupiter:junit-jupiter-engine:5.7.2,\
+	org.junit.jupiter:junit-jupiter-params:5.7.2,\
+	org.junit.platform:junit-platform-runner:1.7.2,\
+	org.junit.platform:junit-platform-commons:1.7.2,\
+	org.junit.platform:junit-platform-launcher:1.7.2,\
+	org.junit.platform:junit-platform-engine:1.7.2,\
+	org.junit.platform:junit-platform-testkit:1.7.2
 
 # This is the version of Mockito that will be used at build time and run time
 dependencies.mockito: \
@@ -80,7 +80,7 @@ dependencies.mockito: \
 	org.mockito:mockito-junit-jupiter:3.6.0
 	
 dependencies.assertj: \
-	org.assertj:assertj-core:3.19.0,\
+	org.assertj:assertj-core:3.20.2,\
 	net.bytebuddy:byte-buddy:1.10.19,\
 	net.bytebuddy:byte-buddy-agent:1.10.19,\
 	org.opentest4j:opentest4j:1.2.0,\
