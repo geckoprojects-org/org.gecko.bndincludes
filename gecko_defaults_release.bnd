@@ -20,9 +20,6 @@
 -pom: true
 -digest: sha256
 
-# Provide a useful group-id to be used in Maven Central
--groupid: org.geckoprojects
-
 # Includes sources from bundle
 -sources: true
 
