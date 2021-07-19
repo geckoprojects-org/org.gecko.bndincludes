@@ -10,7 +10,6 @@
 		pretty		= true; \
 		local		= ${build}/release
 
--groupid.zzzLast: org.geckoprojects.testosgi
 # Includes sources from bundle
 -sources: true
 
