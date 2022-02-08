@@ -12,7 +12,6 @@ dependencies.felix.all: \
 	org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.1.0,\
 	org.apache.felix:org.apache.felix.configurator:1.0.14,\
 	org.apache.felix:org.apache.felix.connect:0.2.0,\
-	org.apache.felix:org.apache.felix.converter:1.0.18,\
 	org.apache.felix:org.apache.felix.coordinator:1.0.2,\
 	org.apache.felix:org.apache.felix.deploymentadmin:0.9.10,\
 	org.apache.felix:org.apache.felix.eventadmin:1.6.2,\
