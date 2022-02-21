@@ -4,6 +4,7 @@
 		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/";\
 		name 				= "Apache Felix Dependencies";\
 		revision 			= "${dependencies.felix.all}";\
+		poll_time           = -1;\
 		transitive 			= false
 
 dependencies.felix.all: \

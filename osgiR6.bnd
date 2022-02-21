@@ -4,6 +4,7 @@
 		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/";\
 		name				= "OSGi Spec R6 Dependencies";\
 		revision			= "${dependencies.osgi.r6.all}";\
+		poll_time           = -1;\
 		transitive			= false
 
 ## OSGi R6

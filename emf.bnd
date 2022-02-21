@@ -7,6 +7,7 @@ emf.plugin: \
 		snapshotUrl			= "https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/";\
 		revision            =  "${emfBomDeps}";\
 		transitive          = false;\
+		poll_time           = -1;\
 		name=GeckoEMF Workspace Extension
 
 -buildpath.emf = ${if;${-enable-gecko-emf};${emf.lib}}

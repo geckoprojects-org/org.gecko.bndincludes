@@ -4,6 +4,7 @@
 		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/";\
 		name				= "Slf4j and Logback Dependencies";\
 		revision			= "${dependencies.logging}" ;\
+		poll_time           = -1;\
 		transitive			= false
 
 -runpath.slf4j: ${if;${-enable-slf4j-logback};${slf4j.runpath}}

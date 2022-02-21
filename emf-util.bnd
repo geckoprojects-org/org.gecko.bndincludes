@@ -4,6 +4,7 @@
 		snapshotUrl			= "https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/";\
 		revision            = "${geckoEMFUtilBomDeps}" ;\
 		transitive          = false;\
+		poll_time           = -1;\
 		name=GeckoEMFUtil Workspace Extension
 
 -buildpath.emfutil: ${if;${-enable-gecko-emf-util};${gecko.emf.util.lib}}

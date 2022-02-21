@@ -19,6 +19,7 @@
 		releaseUrl			= "https://repo.maven.apache.org/maven2/";\
 		revision            = "${dependencies.selenium}";\
 		transitive          = false;\
+		poll_time           = -1;\
 		name                = "Selenium Dependencies"
 
 
