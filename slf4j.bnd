@@ -1,4 +1,4 @@
--plugin.slf4j: \
+poll.time -plugin.slf4j: \
 	aQute.bnd.repository.maven.pom.provider.BndPomRepository;\
 		releaseUrl			= "https://repo.maven.apache.org/maven2/"; \
 		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/";\
