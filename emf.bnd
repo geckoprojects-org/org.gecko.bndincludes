@@ -1,4 +1,4 @@
-poll.time -plugin.geckoEMF: \
+-plugin.geckoEMF: \
 	${emf.plugin}
 
 emf.plugin: \
